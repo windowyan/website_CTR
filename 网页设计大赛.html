@@ -1,0 +1,518 @@
+<html>
+<head>                                                                                                          
+	<title>关于格拉斯哥</title>
+</head>
+<style>
+body,html{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+}
+*{
+	cursor:default;}
+#btn{
+	width:42px;
+	height:7px;
+	border-bottom:7px solid #fff; 
+	border-top:21px double #fff;
+	position:absolute;
+	top:15px;
+	left:15px;
+	z-index:150;
+	
+	
+	
+	}
+ul,li{
+		margin:0px;
+		padding:0px;
+		list-style:none;
+		color:#D3D3D5;
+	}
+
+#btn:hover{
+	cursor:pointer;
+	border-bottom:7px solid #CCC; 
+	border-top:21px double #ccc;
+	transition:border-color 0.3s;
+	transition-timing-function: linear;
+	}
+#header
+{
+	width:230px;
+	height:100%;
+	position:absolute;
+	left:-230px;
+	top:0px;
+	background:#212123;
+	z-index:100;
+	transition:left 0.5s;
+	text-align:center;
+	}
+	
+#header ul li{
+	width:230px;
+	height:40px;
+	margin:3px auto;
+
+	line-height:40px;
+	}
+	
+#header ul li:hover{
+		background:#2F2F31;
+		cursor:pointer;
+		}
+
+#header ul{
+	margin-top:140px;
+}
+#backimg{
+	width:100%;
+	 height:100%;
+	 position:fixed;
+	 z-index:-1;
+	 
+	}
+
+#背景{ margin:0px;
+	 padding:0px;
+	  width:100%;
+	 height:100%;
+	 margin-bottom:0px;
+	}
+#文字简介{
+	font-size:30px;
+	color:#FFF;
+
+	height:300px;
+	border:0px;
+	
+	position:absolute;
+	left:75px;
+	top:300px;
+	}
+
+#历史标题{
+	font-size:60px;
+	color:#fff;
+	background:	#000;
+	width:100%;
+	height:150px;
+	border:0px ;
+	text-align:center;
+	line-height:150px;
+	
+	}
+	
+
+#历史标题 span:hover{
+	transition: 0.5s;
+	color:	#1E90FF;
+
+	}
+
+
+#历史图片{
+	 margin:0px;
+	 padding:0px;
+	  width:75%;
+	 height:75%;
+	float:left;
+	overflow:hidden;
+	border-width:2px;
+	
+	box-shadow:5px 5px 10px #222;
+	}
+	
+#历史图片 img{
+	position:relative;
+	top:-40px;
+	} 	
+#小标题{color:#1E90FF;
+	margin:0px;
+	
+	}
+
+#历史简介{
+	width:25%;
+	font-size:16px;
+	color:#FFF;
+	background:#000;
+	float:left;
+	height:75%;
+	overflow:hidden;
+	border-width:2px;
+	
+	box-shadow:5px 5px 10px #222;
+	}
+	
+#历史简介 h3{
+	margin-left:10px;
+}
+#历史简介 p{
+	
+	margin-left:20px;
+	}
+
+
+#旅游标题{
+	font-size:60px;
+	color:#fff;
+	background:	#696969;
+	width:100%;
+	height:150px;
+	line-height:150px;
+	border:0px ;
+	text-align:center;
+		
+		clear:both;
+	}
+#旅游标题 span:hover{
+	transition: 0.5s;
+	color:		#363636;
+	
+	}
+#景点介绍大盒子{
+	
+	width:100%;
+	background:		#696969;
+ 	display:flex;
+
+	justify-content:space-around;
+       
+	
+	
+	}
+#乔治广场{
+	width:32%;
+	height:35%;
+	margin-top:40px;
+
+	border-width:0px;
+	
+	
+	box-shadow:5px 5px 10px #222;
+	overflow:hidden;
+	
+
+	}
+	
+#乔治广场 img:hover{
+
+}
+
+#格拉斯哥大教堂{
+	width:32%;
+	height:35%;
+	margin-top:40px;
+	
+	border-width:0px;
+	
+	
+	box-shadow:5px 5px 10px #222;
+	}
+#凯文葛罗夫艺术博物馆{
+	width:32%;
+	height:35%;
+	margin-top:40px;
+	
+	border-width:0px;
+	
+	
+	box-shadow:5px 5px 10px #222;
+	
+	}
+#景点文字{
+	width:100%;
+	
+	margin-top:0px;
+	background:	#666;
+	color:	#000;
+	display:flex;
+	justify-content:space-around;
+	
+	
+	}
+#景点文字 p{
+	margin-left:10px;
+	margin-right:10px;
+	
+	}
+#乔治广场介绍{width:32%;
+	height:35%;
+	margin-top:40px;
+	background:		#B0C4DE;
+	border-color:red;
+	border-width:2px;
+	
+	box-shadow:5px 5px 10px #222;
+	
+	}
+#格拉斯哥大教堂介绍{width:32%;
+	height:35%;
+	margin-top:40px;
+	background:	#B0C4DE;
+	border-color:red;
+	border-width:2px;
+	
+	
+	
+	box-shadow:5px 5px 10px #222;
+	}
+#凯文葛罗夫艺术博物馆介绍{
+	width:32%;
+	height:35%;
+	margin-top:40px;
+	background:	#B0C4DE;
+	border-color:red;
+	border-width:2px;
+	
+	
+	
+	box-shadow:5px 5px 10px #222;
+	}
+#大学标题{
+	font-size:60px;
+	color:	#fff;
+	background:	#778899;
+	width:100%;
+	height:150px;
+	line-height:150px;
+	border:0px ;
+	text-align:center;
+	
+	}
+#大学标题 span:hover{
+	transition: 0.5s;
+	color:	#FFA500;
+	
+	}
+#大学图片{
+	float:left;
+	width:67.45%;
+	border-width:2px;
+	
+	box-shadow:5px 5px 10px #222;
+	}
+#大学介绍{
+	width:32.55%;
+	font-size:15px;
+	color:#000;
+	background:	#778899;
+	float:left;
+	height:85.5%;
+	border-width:2px;
+	
+	box-shadow:5px 5px 10px #222;
+	}
+#大学介绍 p{
+	margin-left:10px;
+	margin-right:10px;
+}
+#在线留言{
+	font-size:60px;
+	
+	background:#666;
+	width:100%;
+	height:100%;
+	border:0px ;
+	text-align:center;
+	line-height:150px;
+	clear:both;
+	
+	
+	}
+#在线留言 span:hover{
+	transition: 0.5s;
+	color:	#1E90FF;
+	
+	}
+</style>
+
+<script>
+function fun(){
+	var menu = document.getElementById("header");
+	var btn = document.getElementById("btn");
+	if(menu.style.left == "-230px")
+	{
+	menu.style.left = "0px";
+	
+	
+	}
+	else{
+	menu.style.left = "-230px";
+	
+	
+	}
+
+}
+
+</script>
+
+<body>
+<div id="btn" onClick="fun()">
+
+</div>
+<div id="header">
+<ul>
+	<li>Homepage</li>
+    <li>History</li>
+     <li>Tourism</li>
+      <li>University of Glasgow</li>
+    <li>Contact us</li>
+    <li>About</li>
+</ul>
+
+
+</div>
+<div id = "backimg">
+	<img src="QQ图片20171031150028.jpg" width="100%" height="100%" />
+</div>
+<div id="背景">
+  	
+    <div id="文字简介">
+ 	<p> This is the bell tower in Glasgow. </p>
+    <p>It's a landmark in Glasgow.</p>
+    <div class = "introduction">
+    </div>
+	<p>Here's an introduction to it.</p>
+    </div>
+   
+</div>
+<div id="历史标题">
+    	<span>History</span>
+</div>
+<div id="历史图片">
+    <img src="VCG41962242932.jpg" width="100%"/>
+</div>
+<div id="历史简介">
+    	
+        <h3 id="小标题">Long long ago</h3>
+        <p style="font-family:arial">
+       The city name of Glasgow derives from the "glas Cu" in the Spanish language, which means "green open space"". Glasgow was inhabited by tribes as early        as bc.Christian missionary Saint Mungo (Saint Mungo) was established in sixth Century in Glasgow for the church, after the foundation of the 	development.
+            </p>
+       
+        	 <h3 id="小标题">Modern and contemporary time</h3>
+        <p style="font-family:arial">
+       At the beginning of the sixteenth Century, Glasgow was an important religious and academic city. The deepening of the Clyde River in 1770s promoted the development of Glasgow industry, especially shipbuilding industry in nineteenth Century.
+            </p>
+       
+        	<h3 id="小标题">Now</h3>
+        <p  style="font-family:arial" >
+       In twentieth Century, Glasgow's economy began to decline because of the great depression and the two World War in 1930s.
+In the middle of the 1980s, many financial companies moved in, and Glasgow's economy improved significantly.
+In 2012, QS was named the world's most suitable city for study, fourth in the UK and fiftieth in the world.
+            </p>
+</div>
+       
+
+
+<div id="旅游标题">
+    	<span>Tourism</span>
+</div>
+<div id="景点介绍大盒子">
+	<div id="乔治广场">
+    <img src="乔治广场.jpg"height="100%" width="100%"/>
+    
+
+	</div>
+	<div id="格拉斯哥大教堂">
+   	 <img src="格拉斯哥大教堂.jpg"height="100%" width="100%"/>
+
+    </div>
+	<div id="凯文葛罗夫艺术博物馆">
+    <img src="凯文葛罗夫艺术博物馆.jpg" height="100%" width="100%"/>
+    </div>
+</div>
+<div id="景点文字">
+    <div id="乔治广场介绍">
+     <p  style="font-family:arial; font-size:20px" >
+    George Square is an open-air Sculpture Museum, there are Queen Victoria (Queen Victoria), poet Robert Burns, invention of the steam engine Jame Watt, Scotland native writer Sir Walter Scott and George III sculpture, etc. you know him.</p>
+    </div>
+    <div id="格拉斯哥大教堂介绍">
+    <p  style="font-family:arial; font-size:20px" > 
+    The Cathedral of Glasgow was built in 1136 for the dedication of the patron saint St.Mungo to Glasgow. It has been preserved since the destruction of the religious revolution after its completion in the past three hundred years.</p>
+    </div>
+    <div id="凯文葛罗夫艺术博物馆介绍">
+     <p  style="font-family:arial; font-size:20px" >
+   The Kelvin Grover museum is the largest museum in the United Kingdom, with the exception of British Museum. The museum was one of the major buildings of the 1901 World Exposition in Glasgow. The museum details the history and culture of Scotland, as well as a large collection of natural and European art works
+    </p>
+    </div>
+</div>   
+<div id="大学标题">
+	<span>University of Glasgow</span>
+</div>  
+<div>
+    <div id="大学图片">
+	<img src="格拉斯哥大学1.jpg"/>  
+    </div>  
+    <div id="大学介绍">
+      <p  style="font-family:arial; font-size:25px" >
+      University of Glasgow was founded in 1451, is one of the ten oldest universities in the world, the English world, the country's fourth oldest           		university, the world's top 100 universities, ranking the highest in the calendar year, fifty-first in the world.</p>
+      
+
+	<p  style="font-family:arial; font-size:25px" >University of Glasgow has trained 7 Nobel prize winners, 2 British prime ministers and the founders of 4 institutions of higher learning, and many leading elites in the fields of law, science and commerce, making it enjoy a high reputation both in Europe and the world.</p>
+	<p  style="font-family:arial; font-size:25px" > In 2018, Thames Higher Education World University ranked eightieth in the world and tenth in the UK.</p>
+    </div>
+</div>
+
+<div id="在线留言">
+		 <span>Contact us to learn more</span>
+	<p  style="font-family:arial; font-size:25px" >Our number:010-123456</p>
+   <p   style=" font-size:15px">Copyright©青岛理工大学Web开发大赛 版权所有 翻版必究 滕如坤+201707239</p>
+   <p  style="font-family:arial; font-size:15px; font-color:#666" >--The End--</p>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
